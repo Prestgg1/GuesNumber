@@ -39,7 +39,7 @@ function onCheck(){
     }
     else{
         Score--;
-        document.querySelector('main p:last-child').innerText = 'Uduzdun Xalın 1 Vahid Azaldı Xalı Artır!';
+        document.querySelector('main p:last-child').innerText = 'You lost. Please decrease the number!!';
         document.querySelector('main p:last-child').style.color ='red';
     }
     autohidde()
