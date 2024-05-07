@@ -1,4 +1,4 @@
-let UserNumber = Number(document.querySelector('footer .container input').value) ;
+let UserNumber;
 let Score = 20;
 let RandomNumber = Math.floor(Math.random()*20);
 document.querySelector('header button').onclick = ()=>{
@@ -18,7 +18,7 @@ function autohidde(){
     },1500)
 }
 function onCheck(){
-    
+    UserNumber = Number(document.querySelector('footer .container input').value) ;
     document.querySelector('main p:last-child').style.opacity ='1';
     clearTimeout(time);
     if (UserNumber == RandomNumber && Score!=0) {
