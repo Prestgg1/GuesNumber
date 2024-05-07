@@ -21,7 +21,7 @@ function onCheck(){
     
     document.querySelector('main p:last-child').style.opacity ='1';
     clearTimeout(time);
-    if (UserNumber === RandomNumber && Score!=0) {
+    if (UserNumber == RandomNumber && Score!=0) {
         RandomNumber=Math.floor(Math.random()*20);
         document.querySelector('main p:last-child').innerText = 'Your score has increased by 1 unit.';
         document.querySelector('main p:last-child').style.color ='lime';
