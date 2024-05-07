@@ -34,12 +34,12 @@ function onCheck(){
     }
     else if(UserNumber > RandomNumber){
         Score--;
-        document.querySelector('main p:last-child').innerText = 'You lost. Please increase the number!';
+        document.querySelector('main p:last-child').innerText = 'You lost. Please decrease the number!';
         document.querySelector('main p:last-child').style.color ='red';
     }
     else{
         Score--;
-        document.querySelector('main p:last-child').innerText = 'You lost. Please decrease the number!!';
+        document.querySelector('main p:last-child').innerText = 'You lost. Please increase the number!!';
         document.querySelector('main p:last-child').style.color ='red';
     }
     autohidde()
